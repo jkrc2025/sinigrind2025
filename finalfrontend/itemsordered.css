@@ -1,0 +1,72 @@
+/* Checkout modal */
+.checkout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.checkout-modal[aria-hidden="true"] {
+  display: none;
+}
+
+.checkout-content {
+  background: #fff;
+  padding: 40px;
+  width: 400px;
+  border-radius: 12px;
+  color: #522d1b;
+  font-family: "NanumGothic-Regular", Helvetica;
+  position: relative;
+}
+
+.close-checkout {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.order-summary ul li {
+  margin-bottom: 8px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.payment-method label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.confirm-order {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #a0663c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+}

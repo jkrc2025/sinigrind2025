@@ -1,0 +1,273 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e6e2d7;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.nav-links a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #f2ae1d;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 6px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login {
+  background-color: #f2ae1d;
+  color: #fff;
+}
+
+.signin {
+  background-color: #fff;
+  border: 2px solid #f2ae1d;
+  color: #f2ae1d;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero-text .subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+
+.hero-buttons button {
+  margin: 10px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero-buttons .order {
+  background-color: #f2ae1d;
+  color: #fff;
+}
+
+.hero-buttons .contact {
+  background-color: #fff;
+  border: 2px solid #f2ae1d;
+  color: #f2ae1d;
+}
+
+/* ================= SECTION BASE ================= */
+section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* section separator line */
+section hr {
+  width: 120px;
+  height: 4px;
+  background-color: #a0663c;
+  border: none;
+  margin: 25px auto 50px;
+}
+
+/* alternate background */
+.about-us,
+.testimonials {
+  background-color: #fff;
+}
+
+/* ================= ABOUT ================= */
+.about-us p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 17px;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.coffee-card {
+  background-color: #fff;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.coffee-img {
+  width: 100%;
+  height: 180px;
+  background-color: #d9d9d9;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* ================= TESTIMONIALS ================= */
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background-color: #f5f1ea;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: none;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+/* ================= FOOTER ================= */
+.contact-info {
+  background-color: #a0663c;
+  color: #fff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* ================= USER SIDEBAR ================= */
+.profile-btn {
+  background-color: #f2ae1d;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.15);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 30px;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-header span {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  list-style: none;
+}
+
+.sidebar-links li {
+  margin-bottom: 20px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+
+.sidebar-links a:hover {
+  color: #f2ae1d;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
