@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $input = $_POST["email"];      // username OR email
     $password = $_POST["password"];
 
-    // 🔥 ADMIN CHEAT (NO DB CHECK)
     if ($input === "admin" && $password === "admin123") {
         $_SESSION["is_admin"] = true;
         $_SESSION["username"] = "admin";
@@ -92,4 +91,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   </div>
 </div>
 </body>
+
 </html>
